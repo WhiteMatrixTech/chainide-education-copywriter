@@ -15,6 +15,6 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.CI_TOKEN }}
           repository: WhiteMatrixTech/ChainIDE-Education-FrontEnd
           event-type: update-copywriter
