@@ -1,0 +1,20 @@
+name: Repository Dispatch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.TOKEN }}
+          repository: WhiteMatrixTech/ChainIDE-Education-FrontEnd
+          event-type: update-copywriter
