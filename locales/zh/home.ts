@@ -33,9 +33,10 @@ export default {
   'home.section.course.track': 'Course  Track',
   'home.section.course.track.desc':
     'Start here! Each track is a series of tutorials introducing you to a different domain of web3 development.',
-  'home.section.course.track.card1.title': '100 days of Web3 development',
-  'home.section.course.track.card2.title': 'Master Solidity',
-  'home.section.course.track.card3.title': 'Web3 Fundamental concepts',
+  'home.section.course.track.card1.title': 'Blockchain Fundamental Course',
+  'home.section.course.track.card2.title':
+    'Blockchain Developer Course (Ethereum)',
+  'home.section.course.track.card3.title': 'Blockchain Developer Projects',
   'home.section.course.track.card.buttonText': 'Get Started',
 
   'home.section.stages': 'Made for Enthusiasts of Different Stages',
