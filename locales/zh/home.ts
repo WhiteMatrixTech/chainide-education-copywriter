@@ -11,13 +11,13 @@ export default {
     'Design for coders of all levels, from beginners to skilled programmers.',
   'home.section.two.description2.title': 'In-depth integration with ChainIDE',
   'home.section.two.description2.desc':
-    'Whether you have the basics or not, you can find the right course for you here and get started building your own Dapp quickly',
+    'ChainIDE Light, a lightweight module, empowers the teaching system.',
   'home.section.two.description3.title': 'Interactive learning environment',
   'home.section.two.description3.desc':
-    'Whether you have the basics or not, you can find the right course for you here and get started building your own Dapp quickly',
+    'ChatGPT-like Interactive guide bot makes learning easy and friendly.',
   'home.section.two.description4.title': 'Continuous offline developer events',
   'home.section.two.description4.desc':
-    'Whether you have the basics or not, you can find the right course for you here and get started building your own Dapp quickly',
+    'Including hackathons, bootcamps, conferences and more.',
 
   'home.section.tutorial.categories': 'Tutorial Categories',
   'home.section.tutorial.category1.title': 'NFT Application',
