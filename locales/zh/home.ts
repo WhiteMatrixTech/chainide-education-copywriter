@@ -3,7 +3,7 @@ export default {
     'Join the Web3 Revolution：Learn and Build the Future',
   'home.section.one.desc':
     'Discover the power of decentralized technology with our multi-chain tutorials',
-  'home.section.one.buttonText': 'Start your Journey',
+  'home.section.one.buttonText': 'Try Our Demo',
 
   'home.section.two.title': 'Web3 development is not that difficult',
   'home.section.two.description1.title': 'Various Web3 courses & tutorials',
@@ -21,13 +21,17 @@ export default {
 
   'home.section.tutorial.categories': 'Tutorial Categories',
   'home.section.tutorial.category1.title': 'NFT Application',
-  'home.section.tutorial.category1.desc': 'MakerDao Uniswap Bloom dYdX…',
+  'home.section.tutorial.category1.desc':
+    'ChatGPT-like Interactive guide bot makes learning easy and friendly.',
   'home.section.tutorial.category2.title': 'Decentralized Storage',
-  'home.section.tutorial.category2.desc': 'MakerDao Uniswap Bloom dYdX…',
+  'home.section.tutorial.category2.desc':
+    'ChatGPT-like Interactive guide bot makes learning easy and friendly.',
   'home.section.tutorial.category3.title': 'Defi Application',
-  'home.section.tutorial.category3.desc': 'MakerDao Uniswap Bloom dYdX…',
+  'home.section.tutorial.category3.desc':
+    'ChatGPT-like Interactive guide bot makes learning easy and friendly.',
   'home.section.tutorial.category4.title': 'Decentralized Identity',
-  'home.section.tutorial.category4.desc': 'MakerDao Uniswap Bloom dYdX…',
+  'home.section.tutorial.category4.desc':
+    'ChatGPT-like Interactive guide bot makes learning easy and friendly.',
   'home.section.tutorial.category.card.buttonText': 'Get Start',
 
   'home.section.course.track': 'Course  Track',
@@ -52,7 +56,7 @@ export default {
   'home.section.stage3.title': 'Interactive Learning Environment',
   'home.section.stage3.desc':
     'We innovatively use dialogue form to show all our tutorials you can learn blockchain development like chatting with intelligent robots.',
-  'home.section.stage.buttonText': 'Start Lesson',
+  'home.section.stage.buttonText': 'View Demo',
   'home.section.stage.linkText': 'More Courses',
 
   'home.section.bootcamp': 'Join our basecamp',
