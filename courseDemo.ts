@@ -207,6 +207,6 @@ contract HelloWorld {
     }
 }`;
 
-const videoLink = '';
+const videoLink = 'https://d1pbwflyd697fe.cloudfront.net/Sfinal.mp4';
 
 export { conversations, markdownText, solidityCode, videoLink };
