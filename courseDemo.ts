@@ -1,19 +1,69 @@
-const conversations = [
+const conversation1 = [
   {
     type: 'answer',
-    content: `When we deploy a smart contract on the blockchain or interact with a deployed smart contract, we need gas, and for that we need to have a Web3 wallet, which can be <span class="underline">MetaMask</span>. <span class="text-[#256BEF]">Let's install a MetaMask</span>.`
-  },
-  {
-    type: 'question',
-    content: 'Click to install MetaMask'
+    content: `What is Whitelist?`,
+    key: 'd545hds'
   },
   {
     type: 'answer',
-    content: `Click <a href="https://metamask.io/ rel="noreferrer" target="_blank" class="underline text-[#256BEF]">(https://metamask.io/)</a> to Download Metamask`
+    content: `In general, a whitelist refers to a list of approved entities, such as a list of IP addresses that can access a specific website, a list of software that can be installed, or a list of email domains that are allowed to be used, and so on. In this lesson, we will use Solidity (one of Ethereum's smart contract programming languages) to write a simple whitelist functionality, where users on the whitelist will have the authority to mint NFTs.`,
+    key: '4sdsgbvn2114gfd'
   },
   {
     type: 'answer',
-    content: `Then add Goerli test network to the network inside the small fox wallet.`
+    content: `There are three ways to implement a whitelist functionality in a smart contract:
+    1.Use an array and mapping to store and verify if an address is on the whitelist
+    2.Use a Merkle tree to verify if an address is on the whitelist.
+    3.Use a backend and signature to assign whitelist permissions to an address.`,
+    key: '5564fg3r2awsg'
+  },
+  {
+    type: 'answer',
+    content: `For beginners, method 1 is the easiest way to understand, so this lesson will use Solidity to store and verify whether an address is on the whitelist using an array and mapping.`,
+    key: '315bvfh21231'
+  }
+];
+
+const conversation2 = [
+  {
+    type: 'answer',
+    content: `Let's initiate a Contract in Solidity.`,
+    key: 'dfh2245fggh'
+  },
+  {
+    type: 'answer',
+    content: `Please note that this section might be a bit lengthy, and it may be the first obstacle you encounter. Be patient, and I believe you can get through it smoothly.`,
+    key: 'nghkhuq'
+  },
+  {
+    type: 'answer',
+    content: `In the EXPLORER section on the right side of the screen, you can see the Whitelist.sol code that we have already written.`,
+    key: 'wsetgwg'
+  },
+  {
+    type: 'answer',
+    content: `Here is the complete Whitelist.sol code:`,
+    key: 'hfghrtgher'
+  },
+  {
+    type: 'answer',
+    content: `We are here conducting a line-by-line analysis`,
+    key: '738576785687'
+  },
+  {
+    type: 'answer',
+    content: `...`,
+    key: '316573756731613'
+  },
+  {
+    type: 'answer',
+    content: `...`,
+    key: '316535737371613'
+  },
+  {
+    type: 'answer',
+    content: `...`,
+    key: '42345353'
   }
 ];
 
@@ -181,32 +231,73 @@ Switch MetaMask to Mumbai Testnet Network, connect to the wallet, click wave, an
 ![image-20221111144811987](https://d3gvnlbntpm4ho.cloudfront.net/Hardhat_Dapp_Wave_on_Goerli_Etherum/image-20221111144811987.png)
 `;
 
-const solidityCode = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+const solidityCode = `//SPDX-License-Identifier: Unlicense
+pragma solidity ^0.8.4;
 
-contract HelloWorld {
-    // Event declaration
-    // Up to 3 parameters can be indexed.
-    // Indexed parameters helps you filter the logs by the indexed parameter
-    event Log(address indexed sender, string message);
+contract Whitelist {
+    // The address that can operate addAddressToWhitelist function
+    address public owner;
 
-    address owner;
+    // Create a mapping of whitelistedAddresses
+    // if an address is whitelisted, we would set it to true, it is false by default for all other addresses.
+    mapping(address => bool) private isWhitelisted;
 
-    constructor() {
-        owner = msg.sender;
-    }
+    //Event: record the addresses added to the whitelist
+    event AddToWhitelist(address indexed account);
+    //Event: record whitelisted excluded addresses
+    event RemoveFromWhitelist(address indexed account);
 
-    function test() external {
-        emit Log(msg.sender, "Hello EVM!");
-    }
-
-    function get() external view returns(string memory greeting){
-        if(owner == msg.sender) {
-        return greeting = "Hello, world!";
+    // Setting the initial whitelisted addresses
+    // Setting the address that can operate addAddressToWhitelist function
+    // User will put the value at the time of deployment
+    constructor(address[] memory initialAddresses) {
+        owner =msg.sender;
+        for (uint256 i = 0; i < initialAddresses.length; i++) {
+            addToWhitelist(initialAddresses[i]);
         }
+    }
+
+    /**
+        addToWhitelist - This function adds the address of the sender to the
+        whitelist
+     */
+
+    function addToWhitelist(address _address) public {
+        // Check if the user is the owner
+        require(owner == msg.sender, "Caller is not the owner");
+        // Check if the user has already been whitelisted
+        require(!isWhitelisted[_address], "Address already whitelisted");
+        // Add the address which called the function to the whitelistedAddress array
+        isWhitelisted[_address] = true;
+        // Triggers AddToWhitelist event
+        emit AddToWhitelist(_address);
+    }
+
+    /**
+        removeFromWhitelist - This function removes the address of the sender to the
+        whitelist
+     */
+
+    function removeFromWhitelist(address _address) public {
+        // Check if the user is the owner
+        require(owner == msg.sender, "Caller is not the owner");
+        // Check if the user has not already been whitelisted
+        require(isWhitelisted[_address], "Address not in whitelist");
+        // Remove the address which called the function to the whitelistedAddress array
+        isWhitelisted[_address] = false;
+        // Triggers RemoveFromWhitelist event
+        emit RemoveFromWhitelist(_address);
+    }
+
+    /**
+        whitelistedAddresses - This function gives feedback on whether the input address belongs to the whitelist
+     */
+
+    function whitelistedAddresses(address _address) public view returns (bool) {
+        return isWhitelisted[_address];
     }
 }`;
 
-const videoLink = 'https://d1pbwflyd697fe.cloudfront.net/Sfinal.mp4';
+const videoLink = 'https://d1pbwflyd697fe.cloudfront.net/web3-app-develop.mp4';
 
-export { conversations, markdownText, solidityCode, videoLink };
+export { conversation1, conversation2, markdownText, solidityCode, videoLink };
