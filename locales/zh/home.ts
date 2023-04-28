@@ -45,15 +45,15 @@ export default {
 
   'home.section.stages': 'Made for Enthusiasts of Different Stages',
   'home.section.stage1.label': 'Beginner Welcome',
-  'home.section.stage1.title': 'Split-Screen Teaching',
+  'home.section.stage1.title': 'Elementary Learning',
   'home.section.stage1.desc':
-    'ChainIDE lets users freely split the workspace according to their usage habits, allowing them to see teaching content, code, and compilation results on one screen, and helping them to better understand and learn programming.',
+    'ChainIDE lets users freely split the workspace according to their usage habits, allowing them to see teaching content, code, and compilation results on one screen, ChainIDE will also produce video courses for users based on our rich development experience to help them to better understand and learn programming.',
   'home.section.stage2.label': 'Intermediate Development Welcome',
   'home.section.stage2.title': 'Video-based Teaching',
   'home.section.stage2.desc':
     'ChainIDE will produce video courses for users based on our rich development experience. In the video courses, users can write code while following the course content to gain a certain degree of practical experience, helping users better master the knowledge and application of Web3 technology.',
   'home.section.stage3.label': 'Senior Development Welcome',
-  'home.section.stage3.title': 'Interactive Learning Environment',
+  'home.section.stage3.title': 'Interactive Learning',
   'home.section.stage3.desc':
     'We innovatively use dialogue form to show all our tutorials you can learn blockchain development like chatting with intelligent robots.',
   'home.section.stage.buttonText': 'View Demo',
