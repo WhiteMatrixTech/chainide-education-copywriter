@@ -22,16 +22,16 @@ export default {
   'home.section.tutorial.categories': 'Tutorial Categories',
   'home.section.tutorial.category1.title': 'NFT Application',
   'home.section.tutorial.category1.desc':
-    'ChatGPT-like Interactive guide bot makes learning easy and friendly.',
+    'This course will cover the various applications of NFTs, including how they are created, traded, and used in different contexts.',
   'home.section.tutorial.category2.title': 'Decentralized Storage',
   'home.section.tutorial.category2.desc':
-    'ChatGPT-like Interactive guide bot makes learning easy and friendly.',
+    'This course will cover the various applications of decentralized storage, including how it can be used to store and access files, photos, and other digital assets.',
   'home.section.tutorial.category3.title': 'Defi Application',
   'home.section.tutorial.category3.desc':
-    'ChatGPT-like Interactive guide bot makes learning easy and friendly.',
+    'This course will explore the various applications of DeFi, including lending, borrowing, trading, and investment.',
   'home.section.tutorial.category4.title': 'Decentralized Identity',
   'home.section.tutorial.category4.desc':
-    'ChatGPT-like Interactive guide bot makes learning easy and friendly.',
+    'This course will cover the various applications of decentralized identity, including how it can be used to authenticate users, protect personal data, and provide more secure online transactions.',
   'home.section.tutorial.category.card.buttonText': 'Get Start',
 
   'home.section.course.track': 'Course  Track',
