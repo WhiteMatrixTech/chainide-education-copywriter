@@ -68,167 +68,81 @@ const conversation2 = [
 ];
 
 const markdownText = `
-# Hardhat-based full-stack Polygon Mumbai Project
+**AI-driven Web3 Applications Development with ChainIDE**
 
-This template has been transformed based on the templates of [buildspace](https://buildspace.so/) and we would like to thank buildspace for providing the learning resources.
+Welcome to an innovative tutorial that harnesses the power of artificial intelligence and blockchain for creating decentralized applications (dApps). With the help of ChatGPT, a cutting-edge chatbot developed by OpenAI, we will be diving into the exciting world of Web3 applications and exploring how to leverage AI to develop smart contracts.
 
-This project shows a basic Hardhat use case that increments the wave count by 1 each time it is called, it has a contract sample, a contract test, a script to deploy the contract, and a front-end page.
+**Overview of ChatGPT**
+ChatGPT is an advanced natural language processing model capable of understanding human language and generating human-like responses. With its wide range of capabilities such as text generation, translation, and text completion, it is a versatile tool for creating dApps. We will be using ChatGPT to create a smart contract for NFT, and exploring its use cases in blockchain such as generating code from human language, aiding in code understanding, code completion, vulnerability detection, error detection, and correction. To get the most out of ChatGPT, it's essential to learn how to formulate prompts effectively.
 
-To implement this template, follow these steps:
+Here are some helpful tips to craft prompts that will yield optimal results from ChatGPT:
 
-### 1. Install MetaMask, configure the wallet, and get some funds
+**Prompt Tips:**
 
-### Install MetaMask
+1. Instead of asking questions, state your desired outcome clearly. For example, instead of asking "What is the source code for an ERC-20 smart contract?" provide all the necessary details such as "Create an ERC-20 token named 'ChainIDE', symbol 'CDT', with a total supply of 1,000,000 tokens (without decimals), 18 decimal places, using the OpenZeppelin library and Solidity version 0.8.0."
+1. If the results are not satisfactory, try executing the same command again.
+1. Remember, the more detailed and specific your prompt is, the better the results will be.
 
-When deploying a smart contract on the blockchain or when making a transaction to a deployed smart contract, a gas fee must be paid, and for that, we need to use a crypto wallet which can be MetaMask. Click [here](https://metamask.io/) to install MetaMask.
+<br>
 
-###  Manually adding the Mumbai testnet
+**NFT collection creation using ChatGPT and ChainIDE**
+Let's dive into the creation of an ERC-721 smart contract using ChatGPT. We will be using ChainIDE to compile, deploy, and interact with the smart contract.
 
-After installing MetaMask, you need to manually add the Polygon Mumbai Testnet to MetaMask. To add Polygon Mumbai Testnet to MetaMask, see the [MetaMask Polygon documentation](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask#add-the-polygon-network-manually).
+Here's the prompt for the ERC-721 smart contract we will be creating using ChatGPT:
 
-![](https://d3gvnlbntpm4ho.cloudfront.net/Hardhat_Dapp_Wave_on_Mumbai_Polygon/image-20221122164743259.png)
+**Prompt:** "Create a simple ERC-721 smart contract that allows an externally owned account to mint a new NFT by paying 0.1 ETH, with the contract owner receiving the 0.1 ETH. Please use the OpenZeppelin library for the smart NFT contract. Additionally, include a function that enables the owner to award an NFT to a user and upload metadata for the NFT."
 
+Once you prompt this command to ChatGPT, you can expect a response similar to the one given below.
 
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXUF7rK5ETPvjc2DIXxJs%2Fuploads%2F1jz7Oi0JfZ1RkkmoLthJ%2F0.png?alt=media)
 
-### Obtaining Testnet Matic
+<br>
 
-Once Mumbai has been added to MetaMask, navigate to the [Polygon Faucet](https://faucet.polygon.technology/) to receive test tokens. Tokens are needed to pay for gas fees to deploy and interact with the smart contract. On the faucet page, choose Mumbai as the network, MATIC as the token and paste your MetaMask wallet address. Then, click submit and faucet will send you some test MATIC within a minute.
+**Compile and deploy your smart contract, and interact with it using ChainIDE**
+So you've got the source code – now what? The next step is to unleash your creativity by deploying a smart contract that reflects your vision. Let's dive into the process step-by-step!
 
-<img src="https://d3gvnlbntpm4ho.cloudfront.net/ERC+721+Deployment+on++Mumbai/Polygon_PR_get_tokens.png" width="100%" height="100%" />
+**Compilation**
+First, paste the source code into the ChainIDE editor panel and compile it using the compiler panel. This will generate the ABI and Byte Code that are essential for the deployment process.
 
-### 2. Chang configurations in 'hardhat.config.js' file
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXUF7rK5ETPvjc2DIXxJs%2Fuploads%2F1bKZnYJZdg3S6dYLkyMq%2F1.png?alt=media)
 
-First of all, need to change the configurations in hardhat.config.js file. You can find it in the root directory of your project.
+<br>
 
-1. Replace 'YOUR_MUMBAI_API_URL' with Mumbai RPC, available via [Infura](https://infura.io/),
+**Deployment**
+Speaking of deployment, you can deploy your smart contract on any EVM-supported blockchain. Just make sure you've connected your MetaMask wallet and have some dummy ethers in your wallet for the testnet. To deploy, head to the Interaction & Deploy panel, enter the name and symbol for your NFT collection, and hit the deploy button.
 
- [Alchemy](https://www.alchemy.com/) or directly from MetaMask).
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXUF7rK5ETPvjc2DIXxJs%2Fuploads%2FhLB5njirlg1q4dmjJnmM%2F2.png?alt=media)
 
-2. Replace 'YOUR_PRIVATE_MUMBAI_ACCOUNT_KEY' with your account private key.
+<br>
 
-\`\`\`
-require("@nomiclabs/hardhat-waffle");
+**Interaction & View on OpenSea**
+If your smart contract deploys successfully, you'll receive a contract address and gain access to the "INTERACT" panel of ChainIDE, where you can use all the functions of your smart contract.
 
-module.exports = {
-  solidity: "0.8.0",
-  networks: {
-    mumbai: {
-      url: "YOUR_MUMBAI_API_URL",
-      accounts: ["YOUR_PRIVATE_MUMBAI_ACCOUNT_KEY"],
-    },
-  },
-};
-\`\`\`
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXUF7rK5ETPvjc2DIXxJs%2Fuploads%2FZlClzsIkwM3VShxjwS11%2F3.png?alt=media)
 
-![/Hardhat_Dapp_Wave_on_Mumbai_Polygon/image-20221122165828418.png](https://d3gvnlbntpm4ho.cloudfront.net/Hardhat_Dapp_Wave_on_Mumbai_Polygon/image-20221122165828418.png)
+These functions have different purposes, such as checking the name of the NFT collection using "name()", minting an NFT using "mint()", or awarding an NFT to a wallet address using "awarditem()".
 
-***Don't share your private key with anyone, otherwise you may lose all of your crypto***.
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXUF7rK5ETPvjc2DIXxJs%2Fuploads%2FHSkNC8v2uORHHb1F6W6F%2F4.png?alt=media)
 
-### 3. Let's get it running!
+For "awarditem()", you need to provide two parameters: the address of the recipient and the tokenURL, which is the URL for the NFT image you've uploaded to decentralized storage. There are multiple decentralized storage options available, but for this tutorial, we used[ ](https://nft.storage/files/)<https://nft.storage/files/>. To get the tokenURL, follow these steps:
 
-Open npm-hardhat in terminal
+1. Upload the image you want to use for your NFT to[ ](https://nft.storage/files/)<https://nft.storage/files/> and get the CID for that image.
+2. Create a json file with the image CID and paste it into the IPFS protocol. Then, upload the JSON file to NFT.STORAGE and get the CID for the JSON file.
+3. The token URL is "ipfs//+CID for the Json file".
 
-\`\`\`
-npm install
-npx hardhat run scripts/run.js
-\`\`\`
+After providing these two parameters and clicking the Submit button, the NFT will be rewarded to the recipient's address.
 
-You should see your console.log run from within the contract, and then you should also see the contract address printed out. Here is what it should look like.
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXUF7rK5ETPvjc2DIXxJs%2Fuploads%2FCOqEa7gR2dMUZpTeDOiC%2F5.png?alt=media)
 
-![image-20221111143427975](https://d3gvnlbntpm4ho.cloudfront.net/Hardhat_Dapp_Wave_on_Goerli_Etherum/image-20221111143427975.png)
+We've awarded two NFTs and added them to our collection successfully. In our smart contract, we also have a function that allows users to mint an NFT by paying 0.1 ETH directly to the contract owner. This function does not require a TokenURL and does not have any associated image.
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXUF7rK5ETPvjc2DIXxJs%2Fuploads%2FivTG2OoCkx8FKl6njSKZ%2F6.png?alt=media)
 
-Remember, when you run scripts/run.js, you are actually
+To mint an NFT using this function, simply pay 0.1 ETH + gas fee, and the NFT will be minted to your connected wallet address. No other parameters are required.
 
-1. Creating a new local Ethereum network.
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXUF7rK5ETPvjc2DIXxJs%2Fuploads%2FRUP6hr7HUMThYis3Y0RE%2F7.png?alt=media)
+Lastly, all of the minted NFTs can be seen on the [OpenSea Testnet](https://testnets.opensea.io/).
 
-2. Deploying your contract.
-
-3. Then, when the script ends, Hardhat will automatically destroy that local network.
-   We need a way to keep the local network alive. why? Well, think of a local server.
-   You want to keep it alive so you can continue talking to it, for example,
-   if you have a local server with an API that you make on it,
-   you want to keep this local server alive so you can use it on your website work and test it out.
-   We're going to do the same thing here. Go to your terminal and create a new window.
-   In this window, CD back to your project. Then, go ahead and run here.
-
-   \`\`\`
-   npx hardhat node
-   \`\`\`
-
-You create a local Ethereum network.
-And, as you can see, Hardhat gives 20 accounts to work on and gave them all 10,000 ETH.
-So now, it's just an empty blockchain. There are no blocks.
-
-We don't need this local blockchain network now, exit first
-
-\`\`\`
-ctrl + c
-\`\`\`
-
-### 4. Deploy to the Mumbai Test Network
-
-\`\`\`
-npx hardhat run scripts/deploy.js --network mumbai
-\`\`\`
-
-Here is my output:
-
-\`\`\`
-Deploying contracts with the account: 0xF79A3bb8d5b93686c4068E2A97eAeC5fE4843E7D
-Account balance: 3198297774605223721
-WavePortal address: 0xd5f08a0ae197482FA808cE84E00E97d940dBD26E
-\`\`\`
-
-Copy the address of the deployed contract in the last line and save it somewhere.
-Don't lose it! You'll need it for the foreground later.
-Yours will be different from the above-mentioned one.
-
-### 5. Go to the front-end directory
-
-You need to get this permission in your React app.
-It's as simple as creating a new property in your App.js file called contractAddress and setting its value to the WavePortal address printed out in the console.
-
-\`\`\`
-cd app
-npm install
-\`\`\`
-
-Open /app/src/App.js file and copy your WavePortal address and replace contractAddress:
-
-\`\`\`
-import React, { useEffect, useState } from "react";
-import { ethers } from "ethers";
-import "./App.css";
-
-const App = () => {
-  const [currentAccount, setCurrentAccount] = useState("");
-  /**
-   * Create a variable here that holds the contract address after you deploy!
-   */
-  const contractAddress = "0xd5f08a0ae197482FA808cE84E00E97d940dBD26E"; // there
-\`\`\`
-
-Then copy /artifacts/contracts/WavePortal.sol/WavePortal.json file to replace /app/src/utils/WavePortal.json file
-
-Running front-end pages
-
-\`\`\`
-npm run start
-\`\`\`
-
-### 6. Port forwarding using ChainIDE
-
-For port mapping, click the port, select npm-hardhat for image, port 3000, and click Add:
-
-![image-20221111144455408](https://d3gvnlbntpm4ho.cloudfront.net/Hardhat_Dapp_Wave_on_Goerli_Etherum/image-20221111144455408.png)
-
-Click the prompt button as shown in the figure below to open the page.
-
-![image-20221111144613105](https://d3gvnlbntpm4ho.cloudfront.net/Hardhat_Dapp_Wave_on_Goerli_Etherum/image-20221111144613105.png)
-
-Switch MetaMask to Mumbai Testnet Network, connect to the wallet, click wave, and that should go perfect!
-
-![image-20221111144811987](https://d3gvnlbntpm4ho.cloudfront.net/Hardhat_Dapp_Wave_on_Goerli_Etherum/image-20221111144811987.png)
+That's all there is to creating AI-driven dApps! If you have any questions, feel free to reach out to us. Thanks for joining us on this journey!
 `;
 
 const whitelistSolidityCode = `//SPDX-License-Identifier: Unlicense
@@ -298,70 +212,38 @@ contract Whitelist {
     }
 }`;
 
-const elementaryLearningDemoSolidityCode = `//SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.4;
+const elementaryLearningDemoSolidityCode = `
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
-contract Whitelist {
-    // The address that can operate addAddressToWhitelist function
-    address public owner;
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
-    // Create a mapping of whitelistedAddresses
-    // if an address is whitelisted, we would set it to true, it is false by default for all other addresses.
-    mapping(address => bool) private isWhitelisted;
+contract MyNFT is ERC721URIStorage, Ownable {
+    uint256 private _tokenIdTracker;
+    uint256 private _price = 0.1 ether;
 
-    //Event: record the addresses added to the whitelist
-    event AddToWhitelist(address indexed account);
-    //Event: record whitelisted excluded addresses
-    event RemoveFromWhitelist(address indexed account);
+    constructor(string memory name, string memory symbol)
+        ERC721(name, symbol)
+    {}
 
-    // Setting the initial whitelisted addresses
-    // Setting the address that can operate addAddressToWhitelist function
-    // User will put the value at the time of deployment
-    constructor(address[] memory initialAddresses) {
-        owner =msg.sender;
-        for (uint256 i = 0; i < initialAddresses.length; i++) {
-            addToWhitelist(initialAddresses[i]);
-        }
+    function mint() external payable {
+        require(msg.value == _price, "MyNFT: incorrect ether value");
+        _tokenIdTracker++;
+        _safeMint(msg.sender, _tokenIdTracker);
+        _setTokenURI(_tokenIdTracker, "");
+        address payable owner = payable(owner());
+        owner.transfer(msg.value);
     }
 
-    /**
-        addToWhitelist - This function adds the address of the sender to the
-        whitelist
-     */
-
-    function addToWhitelist(address _address) public {
-        // Check if the user is the owner
-        require(owner == msg.sender, "Caller is not the owner");
-        // Check if the user has already been whitelisted
-        require(!isWhitelisted[_address], "Address already whitelisted");
-        // Add the address which called the function to the whitelistedAddress array
-        isWhitelisted[_address] = true;
-        // Triggers AddToWhitelist event
-        emit AddToWhitelist(_address);
+    function awardItem(address recipient, string memory tokenURI) public onlyOwner {
+        _tokenIdTracker++;
+        _safeMint(recipient, _tokenIdTracker);
+        _setTokenURI(_tokenIdTracker, tokenURI);
     }
 
-    /**
-        removeFromWhitelist - This function removes the address of the sender to the
-        whitelist
-     */
-
-    function removeFromWhitelist(address _address) public {
-        // Check if the user is the owner
-        require(owner == msg.sender, "Caller is not the owner");
-        // Check if the user has not already been whitelisted
-        require(isWhitelisted[_address], "Address not in whitelist");
-        // Remove the address which called the function to the whitelistedAddress array
-        isWhitelisted[_address] = false;
-        // Triggers RemoveFromWhitelist event
-        emit RemoveFromWhitelist(_address);
-    }
-
-    /**
-        whitelistedAddresses - This function gives feedback on whether the input address belongs to the whitelist
-     */
-
-    function whitelistedAddresses(address _address) public view returns (bool) {
-        return isWhitelisted[_address];
+    function setTokenURI(uint256 tokenId, string memory _tokenURI) public onlyOwner {
+        _setTokenURI(tokenId, _tokenURI);
     }
 }`;
 
