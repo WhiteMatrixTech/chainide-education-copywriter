@@ -4,8 +4,10 @@ export default {
   'header.nav.docs': '文档',
   'header.nav.contact': '联系',
   'header.button.login': '登录',
+  'header.button.copy_email': '复制邮箱',
+  'header.button.logout': '退出登录',
   'header.menu.label': '菜单',
-  'language.en': '英文',
+  'language.en': 'English',
   'language.zh': '中文',
   languages: '语言'
 };
