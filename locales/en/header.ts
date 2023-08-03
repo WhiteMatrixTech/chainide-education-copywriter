@@ -9,7 +9,7 @@ export default {
   'header.button.copy_email': 'Copy Email',
   'header.button.copied': 'Copied!',
   'header.menu.label': 'Toggle menu',
-  'language.en': 'English',
+  'language.en': 'EN',
   'language.zh': '中文',
   languages: 'Languages'
 };
