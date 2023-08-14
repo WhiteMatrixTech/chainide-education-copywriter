@@ -9,7 +9,7 @@ export default {
   'header.button.copy_email': '复制邮箱',
   'header.button.copied': '已复制！',
   'header.menu.label': '菜单',
-  'language.en': 'EN',
+  'language.en': 'English',
   'language.zh': '中文',
   languages: '语言'
 };
