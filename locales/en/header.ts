@@ -6,6 +6,7 @@ export default {
   'header.button.login': 'Sign in',
   'header.button.login_succeed': 'Sign-in successful!',
   'header.button.logout': 'Sign out',
+  'header.button.profile': 'Profile',
   'header.button.copy_email': 'Copy Email',
   'header.button.copied': 'Copied!',
   'header.menu.label': 'Toggle menu',
