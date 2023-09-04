@@ -1,7 +1,7 @@
 export default {
   'footer.desc': 'Blockchain for everyone, no coding skills required.',
   'footer.subscribe': 'Subscribe',
-  'footer.copyright': 'Copyright © 2023 White Matrix | All Rights Reserved',
+  'footer.copyright': 'Copyright©2023 White Matrix | All Rights Reserved',
   'footer.nav.product': 'Product',
   'footer.nav.product.chainide': 'ChainIDE',
   'footer.nav.product.forum': 'Forum',
