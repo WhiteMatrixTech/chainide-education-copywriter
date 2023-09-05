@@ -7,7 +7,6 @@ export default {
   'header.button.login_succeed': '登录成功！',
   'header.button.logout': '退出登录',
   'header.button.profile': '个人信息',
-  'header.button.copy_email': '复制邮箱',
   'header.button.copied': '已复制！',
   'header.menu.label': '菜单',
   'language.en': 'English',
