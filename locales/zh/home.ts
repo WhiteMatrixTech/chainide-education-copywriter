@@ -3,7 +3,7 @@ export default {
     'Join the Web3 Revolution: Learn and Build the Future',
   'home.section.one.desc':
     'Discover the power of decentralized technology with our multi-chain tutorials!',
-  'home.section.one.buttonText': 'Try Our Demo',
+  'home.section.one.buttonText': 'Try Our Courses',
 
   'home.section.two.title': 'Web3 development made easy',
   'home.section.two.description1.title': 'Various Web3 courses & tutorials',
@@ -32,15 +32,14 @@ export default {
   'home.section.tutorial.category4.title': 'Decentralized Identity',
   'home.section.tutorial.category4.desc':
     'This course covers the various applications of decentralized identity, including how it can be used to authenticate users, protect personal data, and provide more secure online transactions.',
-  'home.section.tutorial.category.card.buttonText': 'Get Started',
+  'home.section.tutorial.category.card.buttonText': 'Upcoming',
 
   'home.section.course.track': 'Course Tracks',
   'home.section.course.track.desc':
     'Start here! Each track consists of a series of tutorials introducing you to a different domain of Web3 development.',
-  'home.section.course.track.card1.title': 'Blockchain Fundamentals Course',
-  'home.section.course.track.card2.title':
-    'Blockchain Developer Course (Ethereum)',
-  'home.section.course.track.card3.title': 'Blockchain Developer Projects',
+  'home.section.course.track.card1.title': 'Web3 Course 101 - Beginners',
+  'home.section.course.track.card2.title': 'Web3 Course 102 - Intermediate',
+  'home.section.course.track.card3.title': 'Web3 Course 103 - TODO',
   'home.section.course.track.card.buttonText': 'Get Started',
 
   'home.section.stages': 'Made for Enthusiasts of Different Stages',
@@ -56,7 +55,7 @@ export default {
   'home.section.stage3.title': 'Interactive Learning',
   'home.section.stage3.desc':
     'We use an innovative dialogue format to present all of our tutorials, allowing you to learn blockchain development in a conversational way, as if chatting with intelligent robots.',
-  'home.section.stage.buttonText': 'View Demo',
+  'home.section.stage.buttonText': 'View',
   'home.section.stage.linkText': 'More Courses',
 
   'home.section.bootcamp': 'Join our basecamp',
