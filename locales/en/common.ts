@@ -6,5 +6,6 @@ export default {
   'common.button.review': 'Review',
   'common.free': 'Free',
   'common.lessons': 'lessons',
-  'common.min': 'min'
+  'common.min': 'min',
+  'common.no_results': 'no results'
 };

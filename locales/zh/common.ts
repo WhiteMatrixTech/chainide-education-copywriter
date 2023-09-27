@@ -6,5 +6,6 @@ export default {
   'common.button.review': '回顾',
   'common.free': '免费',
   'common.lessons': '课时',
-  'common.min': '分钟'
+  'common.min': '分钟',
+  'common.no_results': '没有结果'
 };

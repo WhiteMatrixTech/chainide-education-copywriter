@@ -6,6 +6,7 @@ import footer from './footer';
 import header from './header';
 import home from './home';
 import lessonDetail from './lessonDetail';
+import profile from './profile';
 export default {
   ...header,
   ...footer,
@@ -14,5 +15,6 @@ export default {
   ...courseList,
   ...courseDetail,
   ...lessonDetail,
+  ...profile,
   ...common
 };
