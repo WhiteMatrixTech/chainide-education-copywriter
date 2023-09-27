@@ -4,7 +4,6 @@ export default {
   'header.nav.docs': 'Docs',
   'header.nav.contact': 'Contact',
   'header.button.login': 'Sign in',
-  'header.button.login_succeed': 'Sign-in successful!',
   'header.button.logout': 'Sign out',
   'header.button.profile': 'Profile',
   'header.button.copied': 'Copied!',

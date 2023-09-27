@@ -7,6 +7,8 @@ import header from './header';
 import home from './home';
 import lessonDetail from './lessonDetail';
 import profile from './profile';
+import tip from './tip';
+
 export default {
   ...header,
   ...footer,
@@ -16,5 +18,6 @@ export default {
   ...courseDetail,
   ...lessonDetail,
   ...profile,
+  ...tip,
   ...common
 };
