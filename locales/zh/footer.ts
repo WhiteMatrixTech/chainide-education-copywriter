@@ -1,16 +1,37 @@
 export default {
-  'footer.desc': '适合所有人的区块链，无需任何编码技能。',
-  'footer.subscribe': '订阅',
-  'footer.copyright': 'Copyright © 2023 White Matrix | 版权所有',
-  'footer.nav.product': '产品',
-  'footer.nav.product.chainide': 'ChainIDE',
-  'footer.nav.product.forum': '论坛',
-  'footer.nav.product.incubator': '孵化器',
-  'footer.nav.support': '支持',
-  'footer.nav.support.docs': '文档',
-  'footer.nav.support.skills': '技能',
-  'footer.nav.support.status': '状态',
-  'footer.nav.company': '公司',
-  'footer.nav.company.about': '关于',
-  'footer.nav.company.contactUs': '联系我们'
+  'footer.menu.learn': '学习',
+  'footer.menu.learn.sub.tutorial': '教程',
+  'footer.menu.learn.sub.course': '课程',
+
+  'footer.menu.build': '构建',
+  'footer.menu.build.sub.studio': 'Studio官网',
+  'footer.menu.build.sub.extensions': '市场',
+
+  'footer.menu.events': '活动',
+  'footer.menu.events.sub.bootcamp': '训练营',
+  'footer.menu.events.sub.hackathon': '黑客马拉松',
+  'footer.menu.events.sub.workshop': '研讨会',
+  'footer.menu.events.sub.seminar': '研讨会',
+  'footer.menu.events.sub.summit': '峰会',
+
+  'footer.menu.community': '社区',
+  'footer.menu.community.sub.forum': '论坛',
+  'footer.menu.community.sub.discord': 'Discord',
+  'footer.menu.community.sub.twitter': 'Twitter',
+  'footer.menu.community.sub.telegram': 'Telegram',
+  'footer.menu.community.sub.facebook': 'Facebook',
+
+  'footer.menu.resources': '资源',
+  'footer.menu.resources.sub.blog': '博客',
+  'footer.menu.resources.sub.guides': '指南',
+  'footer.menu.resources.sub.docs': '文档',
+  'footer.menu.resources.sub.videos': '视频',
+  'footer.menu.resources.sub.osc': '开源代码',
+
+  'footer.menu.company': '公司',
+  'footer.menu.company.sub.about': '关于我们',
+  'footer.menu.company.sub.contact': '联系我们',
+
+  'footer.tos': '使用条款',
+  'footer.privacy': '隐私政策'
 };
