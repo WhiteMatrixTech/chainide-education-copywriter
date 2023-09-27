@@ -1,3 +1,4 @@
+import notFound from './404';
 import common from './common';
 import footer from './footer';
 import header from './header';
@@ -7,5 +8,6 @@ export default {
   ...header,
   ...footer,
   ...home,
+  ...notFound,
   ...common
 };
