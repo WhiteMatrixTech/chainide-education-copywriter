@@ -1,18 +1,18 @@
 export default {
   'footer.menu.learn': 'Learn',
-  'footer.menu.learn.sub.tutorial': 'Tutorial',
-  'footer.menu.learn.sub.course': 'Course',
+  'footer.menu.learn.sub.tutorial': 'Tutorials',
+  'footer.menu.learn.sub.course': 'Courses',
 
   'footer.menu.build': 'Build',
   'footer.menu.build.sub.studio': 'Studio',
   'footer.menu.build.sub.extensions': 'Extensions',
 
   'footer.menu.events': 'Events',
-  'footer.menu.events.sub.bootcamp': 'Bootcamp',
-  'footer.menu.events.sub.hackathon': 'Hackathon',
-  'footer.menu.events.sub.workshop': 'Workshop',
-  'footer.menu.events.sub.seminar': 'Seminar',
-  'footer.menu.events.sub.summit': 'Summit',
+  'footer.menu.events.sub.bootcamp': 'Bootcamps',
+  'footer.menu.events.sub.hackathon': 'Hackathons',
+  'footer.menu.events.sub.workshop': 'Workshops',
+  'footer.menu.events.sub.seminar': 'Seminars',
+  'footer.menu.events.sub.summit': 'Summits',
 
   'footer.menu.community': 'Community',
   'footer.menu.community.sub.forum': 'Forum',
@@ -29,7 +29,7 @@ export default {
   'footer.menu.resources.sub.osc': 'Open Source Code',
 
   'footer.menu.company': 'Company',
-  'footer.menu.company.sub.about': 'About us',
+  'footer.menu.company.sub.about': 'About Us',
   'footer.menu.company.sub.contact': 'Contact Us',
 
   'footer.tos': 'Terms of Use',
