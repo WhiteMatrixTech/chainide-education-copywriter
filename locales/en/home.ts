@@ -11,10 +11,10 @@ export default {
     'Designed for coders of all levels, from beginners to skilled programmers',
   'home.section.two.description2.title': 'In-depth integration with ChainIDE',
   'home.section.two.description2.desc':
-    'ChainIDE Light, a lightweight module, empowers the teaching system',
+    'ChainIDE Light, a lightweight module, empowers the learning system',
   'home.section.two.description3.title': 'Interactive learning environment',
   'home.section.two.description3.desc':
-    'ChatGPT-like Interactive guide bot makes learning easy and friendly',
+    'ChatGPT-like interactive guide bot makes learning easy and friendly',
   'home.section.two.description4.title': 'Continuous offline developer events',
   'home.section.two.description4.desc':
     'Including hackathons, bootcamps, conferences and more',
@@ -26,29 +26,29 @@ export default {
   'home.section.tutorial.category2.title': 'Decentralized Storage',
   'home.section.tutorial.category2.desc':
     'This course covers the various applications of decentralized storage, including how it can be used to store and access files, photos, and other digital assets.',
-  'home.section.tutorial.category3.title': 'Defi Applications',
+  'home.section.tutorial.category3.title': 'DeFi Applications',
   'home.section.tutorial.category3.desc':
     'This course explores the various applications of DeFi, including lending, borrowing, trading, and investment.',
   'home.section.tutorial.category4.title': 'Decentralized Identity',
   'home.section.tutorial.category4.desc':
     'This course covers the various applications of decentralized identity, including how it can be used to authenticate users, protect personal data, and provide more secure online transactions.',
-  'home.section.tutorial.category.card.buttonText': 'Upcoming',
+  'home.section.tutorial.category.card.buttonText': 'Coming Soon',
 
   'home.section.course.track': 'Course Tracks',
   'home.section.course.track.desc':
     'Start here! Each track consists of a series of tutorials introducing you to a different domain of Web3 development.',
   'home.section.course.track.card1.title': 'Web3 Course 101 - Beginners',
   'home.section.course.track.card2.title': 'Web3 Course 102 - Intermediate',
-  'home.section.course.track.card3.title': 'Web3 Course 103 - TODO',
+  'home.section.course.track.card3.title': 'Web3 Course 103 - Advanced',
   'home.section.course.track.card.buttonText': 'Get Started',
 
   'home.section.stages': 'Made for Enthusiasts of Different Stages',
   'home.section.stage1.label': 'Beginners Welcome',
   'home.section.stage1.title': 'Elementary Learning',
   'home.section.stage1.desc':
-    'ChainIDE allows users to split the workspace according to their usage habits, enabling them to view teaching content, code, and compilation results on a single screen. ChainIDE will also produce video courses based on their rich development experience to help users better understand and learn programming.',
-  'home.section.stage2.label': 'Intermediate Development Welcome',
-  'home.section.stage2.title': 'Video-based Teaching',
+    'ChainIDE allows users to split the workspace according to their usage habits, enabling them to view learning content, code, and compilation results on a single screen. ChainIDE will also produce video courses based on their rich development experience to help users better understand and learn programming.',
+  'home.section.stage2.label': 'Intermediate Developers Welcome',
+  'home.section.stage2.title': 'Video-Based Learning',
   'home.section.stage2.desc':
     'ChainIDE will produce video courses for users based on our rich development experience. In the video courses, users can write code while following the course content to gain a certain degree of practical experience, helping users better master the knowledge and application of Web3 technology.',
   'home.section.stage3.label': 'Senior Developers Welcome',
@@ -58,9 +58,9 @@ export default {
   'home.section.stage.buttonText': 'View',
   'home.section.stage.linkText': 'More Courses',
 
-  'home.section.bootcamp': 'Join our basecamp',
+  'home.section.bootcamp': 'Join Our Community',
   'home.section.bootcamp.developers': 'Developers',
   'home.section.bootcamp.projects': 'Blockchain Projects Developed',
-  'home.section.bootcamp.participants': 'Events Participants',
-  'home.section.bootcamp.compiledContract': 'Smart Contract Compilation'
+  'home.section.bootcamp.participants': 'Event Participants',
+  'home.section.bootcamp.compiledContract': 'Smart Contracts Compiled'
 };

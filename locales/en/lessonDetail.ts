@@ -3,7 +3,7 @@ export default {
   'lesson.back_button.home': 'Home',
 
   'lesson.button.next': 'Next',
-  'lesson.button.make_complete': 'Make Complete',
+  'lesson.button.make_complete': 'Mark Complete',
 
   'lesson.mcq.button.submit': 'Submit',
   'lesson.mcq.answer_analysis': 'Answer Analysis:'
