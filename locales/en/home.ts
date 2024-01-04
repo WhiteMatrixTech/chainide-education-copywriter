@@ -1,8 +1,7 @@
 export default {
-  'home.section.one.title':
-    'Join the Web3 Revolution: Learn and Build the Future',
+  'home.section.one.title': 'Fast-Track Your Full-Stack dApp Journey',
   'home.section.one.desc':
-    'Discover the power of decentralized technology with our multi-chain tutorials!',
+    'Embrace the Future of Full-Stack Web3 Development: Effortless, AI-Driven, and Accessible from Anywhere',
   'home.section.one.buttonText': 'Try Our Courses',
 
   'home.section.two.title': 'Web3 development made easy',

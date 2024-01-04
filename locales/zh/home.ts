@@ -1,6 +1,7 @@
 export default {
-  'home.section.one.title': '加入Web3革命：学习并构建未来',
-  'home.section.one.desc': '发掘去中心化技术的力量，通过我们的多链教程来学习！',
+  'home.section.one.title': '快速跟踪您的全栈dApp之旅',
+  'home.section.one.desc':
+    '拥抱全栈Web3开发的未来：轻松、AI驱动、随时随地可访问',
   'home.section.one.buttonText': '尝试我们的课程',
 
   'home.section.two.title': '轻松实现Web3开发',
