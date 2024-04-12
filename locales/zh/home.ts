@@ -2,7 +2,7 @@ export default {
   'home.section.one.title': '快速跟踪您的全栈dApp之旅',
   'home.section.one.desc':
     '拥抱全栈Web3开发的未来：轻松、AI驱动、随时随地可访问',
-  'home.section.one.buttonText': '尝试我们的课程',
+  'home.section.one.buttonText': '开始学习',
 
   'home.section.two.title': '轻松实现Web3开发',
   'home.section.two.description1.title': '各种Web3课程和教程',

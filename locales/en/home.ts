@@ -2,7 +2,7 @@ export default {
   'home.section.one.title': 'Fast-Track Your Full-Stack dApp Journey',
   'home.section.one.desc':
     'Embrace the Future of Full-Stack Web3 Development: Effortless, AI-Driven, and Accessible from Anywhere',
-  'home.section.one.buttonText': 'Try Our Courses',
+  'home.section.one.buttonText': 'Start Learning',
 
   'home.section.two.title': 'Web3 development made easy',
   'home.section.two.description1.title': 'Various Web3 courses & tutorials',
